@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zahidah's Place</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<style>:root{
+::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track
+{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb
+{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover
+{background:#c4c4c4}}</style>
+</head>
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+    
+	<!--Times-->
+    <div id="time-display" class="floating-time-box text-2xl font-bold text-center"></div>
+
+    <script>
+    function updateTime() {
+      const timeElement = document.getElementById("time-display");
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      const currentTime = `${hours}:${minutes}:${seconds}`;
+      timeElement.textContent = currentTime;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Initialize time display
+    updateTime();
+    </script>
+
+    <style>
+    /* Style for the floating time box */
+    .floating-time-box {
+      position: fixed; /* Makes it float on the screen */
+      top: 20px;       /* Distance from the top */
+      right: 20px;     /* Distance from the right */
+      background-color: #ffffff; /* White background */
+      color: #000000;  /* Black text color */
+      border: 2px solid #000000; /* Black border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 10px 20px; /* Padding inside the box */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+      z-index: 9999;   /* Ensures it stays on top of other elements */
+      font-family: 'Arial', sans-serif; /* Font styling */
+    }
+    </style>
+    
+	<!--Header-->
+	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('image/cover\ atas.jpg'); height: 60vh; max-height:460px;">
+			<div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+				<!--Title-->
+					<p class="text-white font-extrabold text-3xl md:text-5xl">
+						Zahidah's Place
+					</p>
+					<p class="text-xl md:text-2xl text-gray-500 underline">Welcome to my Website</p>
+			</div>
+		</div>
+		
+		<!--Container-->
+		<div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
+			
+			<div class="mx-0 sm:mx-6">
+				
+				<!--Nav-->
+				<nav class="mt-0 w-full">
+					<div class="container mx-auto flex items-center">
+						
+						<div class="flex w-1/2 pl-4 text-xl">
+							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="index.html">HOME</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="myself.html">MYSELF</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="my family.html">FAMILY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my friends.html">FRIENDS</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my study.html">STUDY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my gallery.html">GALLERY</a>
+								</li>
+							</ul>
+						</div>
+
+
+                        <div class="flex w-1/2 justify-end content-center">
+                            <!-- X (Twitter) Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@_zaydaisyah" href="https://x.com/_zaydaisyah?s=21" target="_blank">
+                                <!-- X Logo Image (Twitter's new logo) -->
+                                <img src="image/x logo.avif" alt="X Logo" class="h-6 w-6">
+                            </a>
+                        
+                            <!-- Instagram Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@zaydaisyah" href="https://www.instagram.com/zaydaisyah/profilecard/?igsh=MWI2eTN4ajZvNnMyeA==" target="_blank">
+                                <!-- Instagram Logo Image -->
+                                <img src="image/ig logo.webp" alt="Instagram Logo" class="h-6 w-6">
+                            </a>
+                        </div>
+
+					</div>
+				</nav>
+
+                <!-- Lead Card -->
+                <div class="container mx-auto px-4 mb-6">
+                    <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">GETTING STARTED</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">ALYA AND ALI.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    This page is about my siblings. As we know, my sister's name is <b>Zahidah 
+                                    Alya</b> and my brother is <b>Zahid Aliyuddin</b>. 
+                                    <br><br>
+                                    I have two amazing siblings who bring so much life to our family. 
+                                    My younger sister, who is 18, and my youngest brother, who is 15, 
+                                    have grown alongside me through all the ups and downs. When we were 
+                                    kids, we couldn’t help but bicker over the smallest things, but as 
+                                    we’ve grown older, we’ve developed a bond filled with care and 
+                                    understanding. Despite our differences, we always have each other’s 
+                                    backs, making our relationship stronger with time.
+                                </p>
+                            </div>
+                            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                                <div class="flex items-center justify-between"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Lead Card -->
+
+        <!-- Alya Section -->
+        <div class="container mx-auto px-4">
+            <div class="flex h-full bg-white rounded overflow-hidden shadow-lg mb-6">
+                <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY SISTER</p>
+                        <div class="w-full font-bold text-xl text-gray-900 px-6">Zahidah Alya.</div>
+                        <br>
+                        <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                            My sister is a tough and determined girl, always focused on her studies and striving to excel in her course. While she can be a bit moody in the mornings, her kindness and thoughtfulness shine through in the little things she does, like surprising me with gifts. Her resilience and dedication inspire me, and her caring nature makes her a truly special part of my life.
+                        </p>
+
+                        <!-- Attitude Table -->
+                        <table class="w-full table-auto border-collapse text-gray-800 font-serif text-base px-6 mb-5">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="px-6 py-4 text-left">Attitude</th>
+                                    <th class="px-6 py-4 text-left">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border px-6 py-4">Resilience</td>
+                                    <td class="border px-6 py-4">She never gives up, even when faced with 
+                                        challenges in her studies or personal life, always pushing through
+                                         with determination.</td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-6 py-4">Supportive Nature</td>
+                                    <td class="border px-6 py-4">She’s the first to offer help or advice 
+                                        when someone in the family needs it, showing her care through actions.</td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-6 py-4">Creative Thoughtfulness</td>
+                                    <td class="border px-6 py-4">Her gifts are always meaningful and well 
+                                        thought out, reflecting how much she values the people she loves.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Alya Section -->
+
+        <!-- Ali Section -->
+        <div class="container mx-auto px-4">
+            <div class="flex h-full bg-white rounded overflow-hidden shadow-lg mb-6">
+                <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                    <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                        <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY BROTHER</p>
+                        <div class="w-full font-bold text-xl text-gray-900 px-6">Zahid Aliyuddin.</div>
+                        <br>
+                        <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                            My younger brother is the life of the family with his goofy and fun-loving personality. His ability to make everyone laugh and lighten the mood is unmatched. He’s always there for me, ready to lend a helping hand no matter the situation. When I’m feeling down, he knows exactly how to cheer me up, proving time and again how much he truly cares.
+                        </p>
+
+                        <!-- Attitude Table -->
+                        <table class="w-full table-auto border-collapse text-gray-800 font-serif text-base px-6 mb-5">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="px-6 py-4 text-left">Attitude</th>
+                                    <th class="px-6 py-4 text-left">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border px-6 py-4">Joyful Spirit</td>
+                                    <td class="border px-6 py-4">He brings positivity and laughter 
+                                        to any situation, effortlessly lifting the mood of everyone around him.</td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-6 py-4">Reliable Helper</td>
+                                    <td class="border px-6 py-4">No matter what the challenge is, 
+                                        he's always willing to help, offering support in any way he can.</td>
+                                </tr>
+                                <tr>
+                                    <td class="border px-6 py-4">Empathetic</td>
+                                    <td class="border px-6 py-4">He has a natural ability to sense when 
+                                        I’m feeling down and knows exactly how to cheer me up and make me feel better.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Ali Section -->
+    </div>
+
+				<footer class="bg-gray-900 w-full"> 
+                    <div class="max-w-6xl mx-auto px-2 py-8">
+                        <div class="w-full mx-auto flex flex-wrap items-center justify-center">
+                            <div class="flex w-full justify-center text-white font-extrabold">
+                                <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline">
+                                    <span class="text-base text-gray-200">
+                                        <p class="text-center">© 2024. By: Zahidah Aisyah. All rights reserved.</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!-- Back to Top Symbol -->
+                        <div class="flex justify-center mt-4">
+                            <a href="#Top" class="text-gray-200 text-2xl hover:text-gray-400">
+                                &#8593; <!-- This is the Upwards Arrow symbol -->
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+</body>
+</html>   

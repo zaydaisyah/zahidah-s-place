@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zahidah's Place</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<style>:root{
+::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track
+{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb
+{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover
+{background:#c4c4c4}}</style>
+</head>
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+
+	<!--Times-->
+    <div id="time-display" class="floating-time-box text-2xl font-bold text-center"></div>
+
+    <script>
+    function updateTime() {
+      const timeElement = document.getElementById("time-display");
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      const currentTime = `${hours}:${minutes}:${seconds}`;
+      timeElement.textContent = currentTime;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Initialize time display
+    updateTime();
+    </script>
+
+    <style>
+    /* Style for the floating time box */
+    .floating-time-box {
+      position: fixed; /* Makes it float on the screen */
+      top: 20px;       /* Distance from the top */
+      right: 20px;     /* Distance from the right */
+      background-color: #ffffff; /* White background */
+      color: #000000;  /* Black text color */
+      border: 2px solid #000000; /* Black border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 10px 20px; /* Padding inside the box */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+      z-index: 9999;   /* Ensures it stays on top of other elements */
+      font-family: 'Arial', sans-serif; /* Font styling */
+    }
+    </style>
+
+	<!--Header-->
+	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('image/cover\ atas.jpg'); height: 60vh; max-height:460px;">
+			<div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+				<!--Title-->
+					<p class="text-white font-extrabold text-3xl md:text-5xl">
+						Zahidah's Place
+					</p>
+					<p class="text-xl md:text-2xl text-gray-500 underline">Welcome to my Website</p>
+			</div>
+		</div>
+		
+		<!--Container-->
+		<div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
+			
+			<div class="mx-0 sm:mx-6">
+				
+				<!--Nav-->
+				<nav class="mt-0 w-full">
+					<div class="container mx-auto flex items-center">
+						
+						<div class="flex w-1/2 pl-4 text-xl">
+							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="index.html">HOME</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="myself.html">MYSELF</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="my family.html">FAMILY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my friends.html">FRIENDS</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my study.html">STUDY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my gallery.html">GALLERY</a>
+								</li>
+							</ul>
+						</div>
+
+
+                        <div class="flex w-1/2 justify-end content-center">
+                            <!-- X (Twitter) Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@_zaydaisyah" href="https://x.com/_zaydaisyah?s=21" target="_blank">
+                                <!-- X Logo Image (Twitter's new logo) -->
+                                <img src="image/x logo.avif" alt="X Logo" class="h-6 w-6">
+                            </a>
+                        
+                            <!-- Instagram Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@zaydaisyah" href="https://www.instagram.com/zaydaisyah/profilecard/?igsh=MWI2eTN4ajZvNnMyeA==" target="_blank">
+                                <!-- Instagram Logo Image -->
+                                <img src="image/ig logo.webp" alt="Instagram Logo" class="h-6 w-6">
+                            </a>
+                        </div>
+
+					</div>
+				</nav>
+
+                <!-- Lead Card -->
+                <div class="container mx-auto px-4 mb-6">
+                    <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">GETTING STARTED</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">IBU AND AYAH.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    This page is about my parents. As we know, my dad's name is <b>Mohamed 
+                                    Rasedi</b> and my mom is <b>Nor Azimah</b>. 
+                                    <br><br>
+                                    Parents are the unsung heroes of our lives, always there with unwavering 
+                                    support, love, and guidance. Expressing gratitude to them can sometimes 
+                                    feel challenging, as no words seem enough to convey the depth of our 
+                                    appreciation. Crafting heartfelt thank you messages and quotes for 
+                                    parents is a beautiful way to show your love and acknowledge their 
+                                    sacrifices.
+                                </p>
+                            </div>
+                            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                                <div class="flex items-center justify-between"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Lead Card -->
+
+                <!-- Ibu Section -->
+                <div class="container mx-auto px-4">
+                    <div class="flex h-full bg-white rounded overflow-hidden shadow-lg mb-6">
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY MOM</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">Nor Azimah.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    A mother is the ultimate caregiver, always ensuring her family’s needs 
+									are met with love and tenderness. She is a source of emotional 
+									strength, ready to comfort and support her children through life’s 
+									ups and downs. Her nurturing nature and wisdom guide her children to 
+									become compassionate and responsible individuals. The sacrifices she 
+									makes often go unnoticed, yet they form the foundation of her family’s 
+									happiness and success.
+                                </p>
+                                <ul class="text-gray-800 font-serif text-base px-6">
+                                    <li><strong>Attitude:</strong>
+                                        <ol class="text-gray-800 text-base px-6 list-decimal pl-6">
+                                            <li><b>Unconditional Love: </b>Always shows deep love and care, 
+												no matter the situation or challenges faced by her children.</li>
+                                            <li><b>Sacrifice: </b>Willing to put her own needs aside for the 
+												well-being and happiness of her family.</li>
+                                            <li><b>Gentle Guidance: </b>Teaches life lessons through care, 
+												kindness, and gentle correction, fostering positive values.</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                                <div class="flex items-center justify-between"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Ibu Section -->
+
+
+                <!-- Ayah Section -->
+                <div class="container mx-auto px-4">
+                    <div class="flex h-full bg-white rounded overflow-hidden shadow-lg mb-6">
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY DAD</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">Mohamed Rasedi.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    A father is the protector and provider, dedicating himself to the 
+									safety and well-being of his family. He instills values like hard 
+									work, resilience, and integrity in his children, encouraging them to 
+									face challenges with confidence. With his quiet strength and 
+									unwavering support, he inspires his family to dream big and achieve 
+									their goals. His love, though often expressed through actions rather 
+									than words, is a constant source of encouragement and stability.
+                                </p>
+                                <ul class="text-gray-800 font-serif text-base px-6">
+                                    <li><strong>Attitude:</strong>
+                                        <ol class="text-gray-800 text-base px-6 list-decimal pl-6">
+                                            <li><b>Protectiveness: </b>Always ensures the safety and security 
+												of his family, physically and emotionally.</li>
+                                            <li><b>Mentorship: </b>Teaches life skills, critical thinking, and 
+												responsibility, preparing his children for challenges.</li>
+                                            <li><b>Fairness: </b>Treats everyone in the family with respect and 
+												equality, fostering a sense of justice and honesty.</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                                <div class="flex items-center justify-between"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Ayah Section -->
+
+				<footer class="bg-gray-900 w-full"> 
+                    <div class="max-w-6xl mx-auto px-2 py-8">
+                        <div class="w-full mx-auto flex flex-wrap items-center justify-center">
+                            <div class="flex w-full justify-center text-white font-extrabold">
+                                <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline">
+                                    <span class="text-base text-gray-200">
+                                        <p class="text-center">© 2024. By: Zahidah Aisyah. All rights reserved.</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!-- Back to Top Symbol -->
+                        <div class="flex justify-center mt-4">
+                            <a href="#Top" class="text-gray-200 text-2xl hover:text-gray-400">
+                                &#8593; <!-- This is the Upwards Arrow symbol -->
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+</body>
+</html>   

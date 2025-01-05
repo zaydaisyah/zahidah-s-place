@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zahidah's Place</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<style>:root{
+::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track
+{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb
+{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover
+{background:#c4c4c4}}</style>
+</head>
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+
+	<!--Times-->
+    <div id="time-display" class="floating-time-box text-2xl font-bold text-center"></div>
+
+    <script>
+    function updateTime() {
+      const timeElement = document.getElementById("time-display");
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      const currentTime = `${hours}:${minutes}:${seconds}`;
+      timeElement.textContent = currentTime;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Initialize time display
+    updateTime();
+    </script>
+
+    <style>
+    /* Style for the floating time box */
+    .floating-time-box {
+      position: fixed; /* Makes it float on the screen */
+      top: 20px;       /* Distance from the top */
+      right: 20px;     /* Distance from the right */
+      background-color: #ffffff; /* White background */
+      color: #000000;  /* Black text color */
+      border: 2px solid #000000; /* Black border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 10px 20px; /* Padding inside the box */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+      z-index: 9999;   /* Ensures it stays on top of other elements */
+      font-family: 'Arial', sans-serif; /* Font styling */
+    }
+    </style>
+
+	<!--Header-->
+	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('image/cover\ atas.jpg'); height: 60vh; max-height:460px;">
+			<div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+				<!--Title-->
+					<p class="text-white font-extrabold text-3xl md:text-5xl" href="index.html">
+						Zahidah's Place
+					</p>
+					<p class="text-xl md:text-2xl text-gray-500 underline" href="index.html">Welcome to my Website</p>
+			</div>
+		</div>
+		
+		<!--Container-->
+		<div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
+			
+			<div class="mx-0 sm:mx-6">
+				
+				<!--Nav-->
+				<nav class="mt-0 w-full">
+					<div class="container mx-auto flex items-center">
+						
+						<div class="flex w-1/2 pl-4 text-xl">
+							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="index.html">HOME</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="myself.html">MYSELF</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my family.html">FAMILY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my friends.html">FRIENDS</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my study.html">STUDY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my gallery.html">GALLERY</a>
+								</li>
+							</ul>
+						</div>
+
+
+                        <div class="flex w-1/2 justify-end content-center">
+                            <!-- X (Twitter) Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@_zaydaisyah" href="https://x.com/_zaydaisyah?s=21" target="_blank">
+                                <!-- X Logo Image (Twitter's new logo) -->
+                                <img src="image/x logo.avif" alt="X Logo" class="h-6 w-6">
+                            </a>
+                        
+                            <!-- Instagram Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@zaydaisyah" href="https://www.instagram.com/zaydaisyah/profilecard/?igsh=MWI2eTN4ajZvNnMyeA==" target="_blank">
+                                <!-- Instagram Logo Image -->
+                                <img src="image/ig logo.webp" alt="Instagram Logo" class="h-6 w-6">
+                            </a>
+                        </div>
+
+					</div>
+				</nav>
+
+				<div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+					
+                <!--Lead Card-->
+                <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+                    <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                        <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                            <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MYSELF PAGE</p>
+                            <div class="w-full font-bold text-xl text-gray-900 px-6">About Me.</div>
+                            <br>
+                            <ul class="text-gray-800 font-serif text-base px-6 mb-5 list-disc list-inside"><dl>
+                                <li>Hi! My full name is Zahidah Aisyah binti Mohamed Rasedi.</li><br>
+                                <li>Age: 20 <sup>th</sup> years old</li><br>
+                                <li>Date of Birth: 20th March 2024</li><br>
+                                <li>Live: Shah Alam</li><br>
+                                <li>Study: UiTM Rembau, Negeri Sembilan</li><br>
+                                <li>Motto: Success consists of going from failure to failure without loss of enthusiasm.</li><br>
+                            </dl></ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!--Video-->
+				<div style="text-align: center;">
+			
+					<hr color="black">
+			
+					<video controls height="500">
+						<source src="video/myself video.mp4" type="video/mp4">
+						<source src="video/myself video.mp4" type="video/mp4">
+						Your browser does not support the audio element.
+					</video>
+					</div>
+				<!--Video-->
+
+                <!--Posts Container-->
+                <div class="flex flex-wrap justify-between pt-12 -mx-6">
+
+					<!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a class="flex flex-wrap no-underline hover:no-underline">
+								<img src="image/myself 1.jpg" class="h-50 w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">MYSELF PAGE</p>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									This is me at Chocolate Museum.  
+								</p>
+							</a>
+                        </div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+							</div>
+						</div>
+					</div>
+
+                    <!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a class="flex flex-wrap no-underline hover:no-underline">
+								<img src="image/myself 2.jpg" class="h-50 w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">MYSELF PAGE</p>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									This is me as a lead of program.  
+								</p>
+							</a>
+                        </div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+							</div>
+						</div>
+					</div>
+
+                    <!--1/3 col -->
+					<div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+						<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+							<a class="flex flex-wrap no-underline hover:no-underline">
+								<img src="image/myself 3.jpg" class="h-50 w-full rounded-t pb-6">
+								<p class="w-full text-gray-600 text-xs md:text-sm px-6">MYSELF PAGE</p>
+								<p class="text-gray-800 font-serif text-base px-6 mb-5">
+									This is me catching up with my matcha.  
+								</p>
+							</a>
+                        </div>
+						<div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+							</div>
+						</div>
+					</div>
+
+                <!--Shah Alam-->
+                <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+
+						<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+								<p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY HOME</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Shah Alam.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    <img src="image/shah alam.jpg" height="200" style="float:left;" hspace="10">
+                                    My home is loacted at Shah Alam. Shah Alam is a city 
+                                    and the state capital of Selangor, 
+                                    Malaysia and situated within the Petaling District and 
+                                    a small portion of the neighbouring Klang District. 
+                                    Shah Alam replaced Kuala Lumpur as the capital city of 
+                                    the state of Selangor in 1978 due to Kuala Lumpur's 
+                                    incorporation into a Federal Territory in 1974. 
+                                    Shah Alam was the first planned city in Malaysia after 
+                                    independence from Britain in 1957. 
+                                </p>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    Shah Alam was granted city status on 10 October 2000 with Dato' 
+                                    Haji Abu Sujak Haji Mahmud as the first mayor. He recently served 
+                                    as deputy Menteri Besar or Deputy Chief Minister of Selangor. 
+                                    Abu Sujak declared the vision of making Shah Alam a modern city with 
+                                    a unique identity of a Bandaraya Melayu ("Malay City"), showcasing 
+                                    the achievements of the Malay race in all sectors. 
+                                </p>  
+                            </div>                             
+						</div>
+                    </div>
+
+                <br><br>
+
+                <!--Food & Drinks-->
+                <div class="flex h-full bg-white rounded overflow-hidden shadow-lg">
+
+						<div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+							<div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+								<p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY FAV</p>
+								<div class="w-full font-bold text-xl text-gray-900 px-6">Food & Drinks.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    <img src="image/aglio olio.jpeg" height="200" style="float:right;" hspace="10">
+                                    I love pasta. The number of pasta types seems almost infinite. 
+                                    Isn't it amazing that one type of food can take on so many different 
+                                    shapes? Pasta is one of the most versatile pantry staples — simply 
+                                    boil water and dress it up with a little sauce and maybe some protein. 
+                                    <br><br>
+                                    The most pasta that I love is Seafood Aglio E Olio.
+                                    Spaghetti aglio e olio translates to “spaghetti with garlic and oil.” 
+                                    The traditional dish contains little more than these ingredients. 
+                                    It might be finished with a sprinkle of parsley or a pinch of red 
+                                    pepper flakes, but even these are optional. In its simplest form, 
+                                    this classic Italian pasta features spaghetti, olive oil, garlic, 
+                                    salt, and pepper. But if you have ever tried it, you know that 
+                                    spaghetti aglio e olio is far more than the sum of its parts. 
+                                    The garlic infuses the oil with rich, nutty flavor, and salty, 
+                                    starchy pasta cooking water transforms it into a deeply flavorful 
+                                    sauce. Add perfect al dente pasta to the mix, and it is absolute 
+                                    heaven.
+                                </p>
+                                <br><br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5 text-justify">
+                                    <img src="image/matcha.jpg" height="200" style="float:left;" hspace="10">
+                                    Matcha. I super love iced matcha. I always get that at cafe
+                                    especially at Zus Cafe. This one is for all you matcha purists out 
+                                    there. You know who you are. The only ingredients need to make 
+                                    iced matcha is cold water, matcha, and ice. Matcha is meant to paired 
+                                    with something sweet though, so I would recommend drinking your 
+                                    iced matcha with dessert like a slice of cake or sweet mochi.
+                                    <br><br>
+                                    This Iced Matcha Latte recipe is a creamy and refreshing beverage. 
+                                    Matcha Lattes can be made hot and cold! If you are missing your usual 
+                                    iced matcha latte from your neighborhood coffee shop, this recipe is for you! 
+                                    You can just buy sachet of coffee and hotwater. You can also add on
+                                    milk or 'Oatside' Milk. As a result, you will be able to make your 
+                                    favorite drink at home! I love making coffee shop drinks at home.
+                                </p>                               
+							</div>
+						</div>
+
+                        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+							<div class="flex items-center justify-between">
+							</div>
+						</div>
+				</div>
+
+                <br><br><br>
+
+                <footer class="bg-gray-900 w-full"> 
+                    <div class="max-w-6xl mx-auto px-2 py-8">
+                        <div class="w-full mx-auto flex flex-wrap items-center justify-center">
+                            <div class="flex w-full justify-center text-white font-extrabold">
+                                <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline">
+                                    <span class="text-base text-gray-200">
+                                        <p class="text-center">© 2024. By: Zahidah Aisyah. All rights reserved.</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!-- Back to Top Symbol -->
+                        <div class="flex justify-center mt-4">
+                            <a href="#Top" class="text-gray-200 text-2xl hover:text-gray-400">
+                                &#8593; <!-- This is the Upwards Arrow symbol -->
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+</body>
+</html>   

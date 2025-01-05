@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zahidah's Place</title>
+    <meta name="author" content="name">
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> <!--Replace with your tailwind.css once created-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+<style>:root{
+::-webkit-scrollbar{height:10px;width:10px}::-webkit-scrollbar-track
+{background:#efefef;border-radius:6px}::-webkit-scrollbar-thumb
+{background:#d5d5d5;border-radius:6px}::-webkit-scrollbar-thumb:hover
+{background:#c4c4c4}}</style>
+</head>
+<body class="bg-gray-200 font-sans leading-normal tracking-normal">
+
+	<!--Times-->
+    <div id="time-display" class="floating-time-box text-2xl font-bold text-center"></div>
+
+    <script>
+    function updateTime() {
+      const timeElement = document.getElementById("time-display");
+      const now = new Date();
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      const seconds = now.getSeconds().toString().padStart(2, '0');
+      const currentTime = `${hours}:${minutes}:${seconds}`;
+      timeElement.textContent = currentTime;
+    }
+
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Initialize time display
+    updateTime();
+    </script>
+
+    <style>
+    /* Style for the floating time box */
+    .floating-time-box {
+      position: fixed; /* Makes it float on the screen */
+      top: 20px;       /* Distance from the top */
+      right: 20px;     /* Distance from the right */
+      background-color: #ffffff; /* White background */
+      color: #000000;  /* Black text color */
+      border: 2px solid #000000; /* Black border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 10px 20px; /* Padding inside the box */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+      z-index: 9999;   /* Ensures it stays on top of other elements */
+      font-family: 'Arial', sans-serif; /* Font styling */
+    }
+    </style>
+
+	<!--Header-->
+	<div class="w-full m-0 p-0 bg-cover bg-bottom" style="background-image:url('image/cover\ atas.jpg'); height: 60vh; max-height:460px;">
+			<div class="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal">
+				<!--Title-->
+					<p class="text-white font-extrabold text-3xl md:text-5xl">
+						Zahidah's Place
+					</p>
+					<p class="text-xl md:text-2xl text-gray-500 underline">Welcome to my Website</p>
+			</div>
+		</div>
+		
+		<!--Container-->
+		<div class="container px-4 md:px-0 max-w-6xl mx-auto -mt-32">
+			
+			<div class="mx-0 sm:mx-6">
+				
+				<!--Nav-->
+				<nav class="mt-0 w-full">
+					<div class="container mx-auto flex items-center">
+						
+						<div class="flex w-1/2 pl-4 text-xl">
+							<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="index.html">HOME</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="myself.html">MYSELF</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my family.html">FAMILY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my friends.html">FRIENDS</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block py-2 px-2 text-white no-underline hover:underline" href="my study.html">STUDY</a>
+								</li>
+								<li class="mr-2">
+								<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:underline py-2 px-2" href="my gallery.html">GALLERY</a>
+								</li>
+							</ul>
+						</div>
+
+
+                        <div class="flex w-1/2 justify-end content-center">
+                            <!-- X (Twitter) Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@_zaydaisyah" href="https://x.com/_zaydaisyah?s=21" target="_blank">
+                                <!-- X Logo Image (Twitter's new logo) -->
+                                <img src="image/x logo.avif" alt="X Logo" class="h-6 w-6">
+                            </a>
+                        
+                            <!-- Instagram Link -->
+                            <a class="inline-block text-gray-500 no-underline hover:text-white hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 avatar" data-tippy-content="@zaydaisyah" href="https://www.instagram.com/zaydaisyah/profilecard/?igsh=MWI2eTN4ajZvNnMyeA==" target="_blank">
+                                <!-- Instagram Logo Image -->
+                                <img src="image/ig logo.webp" alt="Instagram Logo" class="h-6 w-6">
+                            </a>
+                        </div>
+
+					</div>
+				</nav>
+
+                <div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+                    <!-- Lead Card -->
+                    <div class="flex h-full bg-white rounded overflow-hidden shadow-lg mb-6">
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">MY STUDY PAGE</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">My Study Journey.</div>
+                                <br>
+                                <p class="text-gray-800 font-serif text-base px-6 mb-5">
+                                    Embracing challenges, growing through learning, and striving for this 
+                                    excellence journey is shaping the future I envision.
+                                </p>
+                            </div>
+                            <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg p-6">
+                                <div class="flex items-center justify-between"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Lead Card -->
+                </div>
+
+                <p style="margin-top: 10px; font-size: 24px; color: #555; text-align: center; font-family: serif;">
+                    Kindergarten and Primary School.
+                </p><br>
+
+                <!-- Kindergarten and Primary School Map -->
+                <div class="flex justify-center items-center my-4">
+                    <img src="image/map kindergarten and primary sch.jpg" usemap="#map-kindergarten-primary" class="rounded shadow-lg">
+                </div>
+
+                <map name="map-kindergarten-primary">
+                    <area target="_blank" alt="Kindergarten" title="Kindergarten" href="https://www.facebook.com/p/Pasti-Little-Ikhwan-Puncak-Alam-100063516315495/?locale=ms_MY" coords="188,238,204" shape="circle">
+                    <area target="_blank" alt="Primary School" title="Primary School" href="https://sites.google.com/moe-dl.edu.my/skpa2" coords="611,216,191" shape="circle">
+                </map>
+                
+                <div class="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+                    <!-- Row 1: Kindergarten and Primary School -->
+                    <div class="flex flex-wrap justify-between mb-6">
+                        <!-- Kindergarten -->
+                        <div class="w-full md:w-1/2 p-2">
+                            <div class="h-full bg-white rounded overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">KINDERGARTEN</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">Puncak Alam.</div>
+                                <p class="text-gray-800 text-base px-6 mb-5">
+                                    It all began at Pasti Little Ikhwan in Puncak Alam, where my first memories of school were filled
+                                    with curiosity and the joy of learning. The colorful classrooms and caring teachers laid the
+                                    foundation for my love of knowledge.
+                                </p>
+                                <ul class="text-gray-800 font-serif text-base px-6">
+                                    <li><strong>Knowledge:</strong>
+                                        <ol class="text-gray-800 text-base px-6 list-decimal pl-6">
+                                            <li>The joy of learning through play and exploration.</li>
+                                            <li>The importance of kindness and sharing with others.</li>
+                                            <li>Building confidence in a safe and nurturing environment.</li>
+                                        </ol>
+                                    </li><br>
+                                    <p class="text-gray-600 text-xs md:text-sm underline">CLICK ON MY FACE</p>
+                                </ul>
+                                <br><br>
+                            </div>
+                        </div>
+                
+                        <!-- Primary School -->
+                        <div class="w-full md:w-1/2 p-2">
+                            <div class="h-full bg-white rounded overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">PRIMARY SCHOOL</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">Puncak Alam.</div>
+                                <p class="text-gray-800 text-base px-6 mb-5">
+                                    From there, I moved to SK Puncak Alam 2, also in Puncak Alam, where I spent my primary school years.
+                                    It was a time of discovery—making friends, learning new skills, and participating in various
+                                    activities.
+                                </p>
+                                <ul class="text-gray-800 font-serif text-base px-6">
+                                    <li><strong>Knowledge:</strong>
+                                        <ol class="text-gray-800 text-base px-6 list-decimal pl-6">
+                                            <li>Discipline and the value of following rules.</li>
+                                            <li>How to work effectively as part of a team.</li>
+                                            <li>The basics of time management and responsibility.</li>
+                                        </ol>
+                                    </li><br>
+                                    <p class="text-gray-600 text-xs md:text-sm underline">CLICK ON MY FACE</p>
+                                </ul>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 10px; font-size: 24px; color: #555; text-align: center; font-family: serif;">
+                        High School and University.
+                    </p><br>
+
+                    <!-- High School and University Map -->
+                    <div class="flex justify-center items-center my-4">
+                        <img src="image/map high sch and uni.jpg" usemap="#map-highschool-university" class="rounded shadow-lg">
+                    </div>
+
+                    <map name="map-highschool-university">
+                        <area target="_blank" alt="High School" title="High School" href="https://samttaj.nas.my/page/profil-sekolah" coords="235,313,289" shape="circle">
+                        <area target="_blank" alt="University" title="University" href="https://nsembilan.uitm.edu.my/rembau/" coords="827,304,266" shape="circle">
+                    </map>
+                
+                    <!-- Row 2: High School and University -->
+                    <div class="flex flex-wrap justify-between">
+                        <!-- High School -->
+                        <div class="w-full md:w-1/2 p-2">
+                            <div class="h-full bg-white rounded overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">HIGH SCHOOL</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">Shah Alam.</div>
+                                <p class="text-gray-800 text-base px-6 mb-5">
+                                    High school brought new challenges and opportunities at SAMT Tengku Ampuan Jemaah in Shah Alam. It
+                                    was here that I truly began to understand the value of hard work and perseverance.
+                                </p>
+                                <ul class="text-gray-800 font-serif text-base px-6">
+                                    <li><strong>Knowledge:</strong>
+                                        <ol class="text-gray-800 text-base px-6 list-decimal pl-6">
+                                            <li>The importance of perseverance when facing challenges.</li>
+                                            <li>How to balance academics with extracurricular activities.</li>
+                                            <li>The value of forming meaningful relationships and learning from peers.</li>
+                                        </ol>
+                                    </li><br>
+                                    <p class="text-gray-600 text-xs md:text-sm underline">CLICK ON MY FACE</p>
+                                </ul>
+                                <br><br>
+                            </div>
+                        </div>
+                
+                        <!-- University -->
+                        <div class="w-full md:w-1/2 p-2">
+                            <div class="h-full bg-white rounded overflow-hidden shadow-lg">
+                                <p class="w-full text-gray-600 text-xs md:text-sm pt-6 px-6">UNIVERSITY</p>
+                                <div class="w-full font-bold text-xl text-gray-900 px-6">Rembau.</div>
+                                <p class="text-gray-800 text-base px-6 mb-5">
+                                    Finally, my journey led me to UiTM Campus Rembau in Negeri Sembilan, where I embarked on my
+                                    university studies. The experience has been transformative, preparing me for the professional world
+                                    while fostering independence and critical thinking.
+                                </p>
+                                <ul class="text-gray-800 font-serif text-base px-6">
+                                    <li><strong>Knowledge:</strong>
+                                        <ol class="text-gray-800 text-base px-6 list-decimal pl-6">
+                                            <li>Independence and self-reliance in managing life and studies.</li>
+                                            <li>Critical thinking and problem-solving skills.</li>
+                                            <li>Preparing for the professional world and understanding real-world applications of
+                                                knowledge.</li>
+                                        </ol>
+                                    </li><br>
+                                    <p class="text-gray-600 text-xs md:text-sm underline">CLICK ON MY FACE</p>
+                                </ul>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer class="bg-gray-900 w-full"> 
+                    <div class="max-w-6xl mx-auto px-2 py-8">
+                        <div class="w-full mx-auto flex flex-wrap items-center justify-center">
+                            <div class="flex w-full justify-center text-white font-extrabold">
+                                <a class="text-gray-900 no-underline hover:text-gray-900 hover:no-underline">
+                                    <span class="text-base text-gray-200">
+                                        <p class="text-center">© 2024. By: Zahidah Aisyah. All rights reserved.</p>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                
+                        <!-- Back to Top Symbol -->
+                        <div class="flex justify-center mt-4">
+                            <a href="#Top" class="text-gray-200 text-2xl hover:text-gray-400">
+                                &#8593; <!-- This is the Upwards Arrow symbol -->
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+                                
+</body>
+</html>   
